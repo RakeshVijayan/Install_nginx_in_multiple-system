@@ -1,6 +1,3 @@
-# Shell script to install packages in multiple systems by ssh key pairing
-
-
 #!/bin/bash
 
 # Set IP address and domain name
@@ -69,6 +66,6 @@ if [ $? -eq 0 ]
 then
   ssh $uat_server 'sudo service nginx restart'
 else
-  echo "Error: nginx configuration tests failed on development server"
+  echo "Error: nginx configuration tests failed on Uat server"
 fi
 
